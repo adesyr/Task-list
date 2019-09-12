@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button defaultHref='/' slot="start"></ion-back-button>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Login</ion-label>
+      <ion-input type="text" [(ngModel)]='user.login'></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="stacked">Mot de passe</ion-label>
+        <ion-input type="password" [(ngModel)]='user.pass'></ion-input>
+      </ion-item>
+
+    <ion-item>
+      <ion-button expand='full' (click)='validate()'>Valider</ion-button>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

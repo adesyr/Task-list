@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>user-infos</ion-title>
+    <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h3> {{ user.name.first }} {{ user.name.last }}</h3>
+  <p>
+    {{ user.location.street}} {{ user.location.postcode }} {{ user.location.city}}
+  </p>
+
+</ion-content>
